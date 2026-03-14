@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <!-- Cartoon Characters Container -->
+    <div id="characters-container"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="title-container">
+            <h1 class="main-title">🎉 Happy Birthday! 🎂</h1>
+            <p class="subtitle">Let's celebrate this special day</p>
+        </div>
+    </header>
+
+    <!-- Balloon Animation -->
+    <div class="balloons">
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+        <div class="balloon balloon-4"></div>
+        <div class="balloon balloon-5"></div>
+    </div>
+
+    <!-- Birthday Countdown Timer -->
+    <section class="counter-section">
+        <h2>⏰ Countdown to Birthday</h2>
+        <div class="counter">
+            <div class="counter-box">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="counter-box">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="counter-box">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="counter-box">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+        <p id="countdown-message" class="countdown-message"></p>
+    </section>
+
+    <!-- Message Box Section -->
+    <section class="message-section">
+        <h2>💌 Send Your Birthday Message</h2>
+        <div class="message-box-container">
+            <textarea id="messageInput" class="message-textarea" placeholder="Write your heartfelt message here... ❤️" maxlength="500"></textarea>
+            <div class="char-count"><span id="charCount">0</span>/500</div>
+            <button class="send-btn" id="sendBtn">📤 Send Message</button>
+            <div id="messages-display" class="messages-display">
+                <h3>💭 Messages:</h3>
+                <div id="messagesContainer" class="messages-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">📸 Photo Memories</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/IMG-20240707-WA0000.jpg" alt="Memory 1">
+                <p class="photo-caption">Happy Moments</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/20250303_104806.jpg" alt="Memory 2">
+                <p class="photo-caption">Fun Times</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/20250303_224234.jpg" alt="Memory 3">
+                <p class="photo-caption">Birthday Celebration</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/20250316_163356.jpg" alt="Memory 4">
+                <p class="photo-caption">Friends & Family</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/20250318_221619.jpg" alt="Memory 5">
+                <p class="photo-caption">Party Time</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/DSC00510.jpg" alt="Memory 6">
+                <p class="photo-caption">Sweet Memories</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20210909-WA0011.jpg" alt="Memory 7">
+                <p class="photo-caption">Good Times</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20210909-WA0012.jpg" alt="Memory 8">
+                <p class="photo-caption">Cherished Moments</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20210918-WA0001.jpg" alt="Memory 9">
+                <p class="photo-caption">Laughs & Smiles</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20210918-WA0003.jpg" alt="Memory 10">
+                <p class="photo-caption">Happy Days</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20210918-WA0005.jpg" alt="Memory 11">
+                <p class="photo-caption">Special Moments</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20210918-WA0008.jpg" alt="Memory 12">
+                <p class="photo-caption">Together Forever</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20230818-WA0011.jpg" alt="Memory 13">
+                <p class="photo-caption">Beautiful Memories</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20231114-WA0002.jpg" alt="Memory 14">
+                <p class="photo-caption">Treasured Times</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20231114-WA0003.jpg" alt="Memory 15">
+                <p class="photo-caption">Amazing Days</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/20250303_092729.jpg" alt="Memory 16">
+                <p class="photo-caption">Summer Vibes</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20240826-WA0037.jpg" alt="Memory 17">
+                <p class="photo-caption">Unforgettable</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20240826-WA0041.jpg" alt="Memory 18">
+                <p class="photo-caption">The Good Life</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20241024-WA0001.jpg" alt="Memory 19">
+                <p class="photo-caption">Adventures</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20250318-WA0011.jpg" alt="Memory 20">
+                <p class="photo-caption">Celebrations</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20250914-WA0008.jpg" alt="Memory 21">
+                <p class="photo-caption">Golden Moments</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20260202-WA0000%20(1).jpg" alt="Memory 22">
+                <p class="photo-caption">Happiness</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20260216-WA0000.jpg" alt="Memory 23">
+                <p class="photo-caption">Birthday Joy</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG-20260216-WA0001.jpg" alt="Memory 24">
+                <p class="photo-caption">Special Day</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/IMG20230115175941.jpg" alt="Memory 25">
+                <p class="photo-caption">Wonderful Times</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Screenshot_20250909_224028_Call.jpg" alt="Memory 26">
+                <p class="photo-caption">Connected Hearts</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Screenshot_20251001_123808_Snapchat.jpg" alt="Memory 27">
+                <p class="photo-caption">Instagram Moments</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Screenshot_20251001_170551_Snapchat.jpg" alt="Memory 28">
+                <p class="photo-caption">Social Times</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Screenshot_20251016_124103_Snapchat.jpg" alt="Memory 29">
+                <p class="photo-caption">Fun Captures</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Screenshot_20251019_125606_Snapchat.jpg" alt="Memory 30">
+                <p class="photo-caption">Snap Memories</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Screenshot_20251020_200129_Snapchat.jpg" alt="Memory 31">
+                <p class="photo-caption">Digital Memories</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/Screenshot_20251024_130721_Snapchat.jpg" alt="Memory 32">
+                <p class="photo-caption">Last but Never Least</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Cake Animation -->
+    <section class="cake-section">
+        <div class="cake">
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+            <div class="cake-layer cake-1"></div>
+            <div class="cake-layer cake-2"></div>
+            <div class="cake-layer cake-3"></div>
+        </div>
+        <p class="cake-text">Make a Wish! 🎂</p>
+        <button class="celebration-btn" id="celebrateBtn">🎊 Click to Celebrate! 🎊</button>
+    </section>
+
+    <!-- Fireworks Section -->
+    <section class="fireworks-section">
+        <h2>✨ Fireworks Show</h2>
+        <canvas id="fireworksCanvas"></canvas>
+    </section>
+
+    <!-- Lightbox Modal for Full-Size Image Slideshow -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="closeLightbox">&times;</button>
+            <button class="lightbox-prev" id="prevImage">❮</button>
+            <img id="lightboxImage" src="" alt="Full Size Image" class="lightbox-image">
+            <button class="lightbox-next" id="nextImage">❯</button>
+            <div class="lightbox-info">
+                <p id="imageCounter">1 / 34</p>
+                <p id="imageCaption">Photo Caption</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for a Special Celebration</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
