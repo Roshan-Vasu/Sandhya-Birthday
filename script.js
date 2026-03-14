@@ -86,7 +86,7 @@ function startCountdown() {
     hideWebsite();
 
     // Create date object for March 16, 2026 at 12:00 AM (midnight)
-    const birthdayDate = new Date(2026, 2, 14, 0, 0, 0, 0).getTime();
+    const birthdayDate = new Date(2026, 2, 16, 0, 0, 0, 0).getTime();
 
     const interval = setInterval(() => {
         const now = new Date().getTime();
